@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Milestones</title>
+</head>
+<body>
+    <h1>Welcome to Swiggy Milestones</h1>
+    
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}!</p>
+        <p>Your Milestone Points: {{ milestone.points }}</p>
+    {% else %}
+        <p>Please log in to view your milestone points.</p>
+    {% endif %}
+    
+    <script>
+        // You can add any JavaScript logic here if needed
+    </script>
+</body>
+</html>
